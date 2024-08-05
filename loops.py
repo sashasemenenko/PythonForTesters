@@ -32,3 +32,36 @@ while number <= 10:
     total += number
     number += 1
 print("Sum numbers of 1 to 10 is", total)
+
+
+for i in range(1, 11):
+    if i == 6:
+        break
+    print(i)
+
+print("------------")
+
+for i in range(1, 11):
+    if i == 6:
+        continue
+    print(i)
+
+
+print("------------")
+
+for i in range(1, 21):
+    if i % 2 == 0:
+        continue
+    if i > 15:
+        break
+    print(i)
+
+
+print("------------")
+
+for i in range(1, 9):
+    if i % 7 == 0:
+        print("Found multiple of 7")
+        break
+else:
+    print("No multiples of 7 found")
